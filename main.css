@@ -22,25 +22,43 @@ Colour scheme
     margin: 0;
     box-sizing: border-box;
 }
+
+@keyframes fade {
+    from {
+        background-color: #199CFF;
+    }
+    to {
+        background-color: #62737F;
+    }
+}
+
 html{
     font-size: 16px;
     line-height: 1.6;
     font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+
+body{
+    background-color: #62737F;
 }
 /***************************
 DEFAULTS - MOBILE FIRST
 ***************************/
 h1{
     font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+    color: #0C4E7F;
 }
 h2{
     font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+    color: #0C4E7F;
 }
 li, p, a{
     font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    color: #0C4E7F;
 }
 pre, code, kbd{
     font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff',
+    color: #0C4E7F;
 }
 /***************************
     LAYOUT - MOBILE FIRST
@@ -48,11 +66,16 @@ pre, code, kbd{
 .wrapper{
     width: 95%;
     margin: 0 auto;
+    background-color: #65BDFF;
 }
 header{
     width: 100%;
+    background-color: #65BDFF;
 }
+
+
 nav{
+    text-align: center;
     width: 100%;
 }
 nav>ul{
@@ -61,6 +84,9 @@ nav>ul{
 nav li{
     width: 100%;
     list-style: none;
+    border: 2px solid #0C4E7F;
+    text-decoration: none;
+    background-color: #199CFF;
 }
 nav a,
 nav a:link,
@@ -72,8 +98,12 @@ nav a:visited{
 nav a:active,
 nav a:focus,
 nav a:hover{
-
+    animation-name: fade;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    color: white;
 }
+
 main{
     width: 100%;
 }
