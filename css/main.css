@@ -62,6 +62,7 @@ header {
     background-color: #65BDFF;
     width: 100%;
     background-image: url(http://lorempixel.com/1920/1080/food/bacon);
+    background-position: center;
 }
 
 /*small*/
