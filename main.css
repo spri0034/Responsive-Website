@@ -21,7 +21,8 @@ html {
 }
 
 body {
-    background-color: purple;
+    background-color: teal;
+/*    background-color: #65BDFF;*/
     width: 100%;
 }
 
@@ -114,6 +115,7 @@ header {
         background-color: azure;
     }
     footer {
+        margin-top: 10px;
         width: 100%;
         background-color: #199CFF;
         text-align: center;
@@ -138,7 +140,7 @@ header {
         padding: 0 50px 0 50px;
     }
     header {
-        height: 100px
+        height: 100px;
     }
     nav {
         width: 90%;
@@ -161,7 +163,7 @@ header {
     }
     main {
         width: 90%;
-        padding: 0 5% 0 5%;
+
     }
     .col {
         width: 50%;
@@ -248,7 +250,7 @@ header {
         float: left;
         margin: 0 auto;
         padding: 50px;
-        font-size: 2rem
+        font-size: 2rem;
     }
     nav li {
         width: 100%;
