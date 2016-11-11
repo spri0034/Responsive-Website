@@ -17,12 +17,12 @@
 html {
     font-size: 16px;
     line-height: 1.6;
-    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+    font-family: font-family: 'Philosopher', Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: teal;
-/*    background-color: #65BDFF;*/
+
+    background-color: #62737F;
     width: 100%;
     position:absolute;
 }
@@ -61,7 +61,7 @@ kbd {
 header {
     background-color: #65BDFF;
     width: 100%;
-/*    background-image: url(http://lorempixel.com/1920/1080/food);*/
+    background-image: url(http://lorempixel.com/1920/1080/food/bacon);
 }
 
 /*small*/
@@ -86,12 +86,14 @@ header {
         list-style: none;
         border: 2px solid #0C4E7F;
         background-color: #199CFF;
+        margin-top: 5px;
+
     }
     nav a,
     nav a:link,
     nav a:visited {
         display: block;
-        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: bold 1.618rem 'Philosopher', Helvetica, Arial, sans-serif;
         text-align: center;
         text-decoration: none;
     }
@@ -109,6 +111,7 @@ header {
     .col {
         float: none;
         width: 100%;
+        padding-bottom: 20px;
     }
     .col img {
         width: 100%;
@@ -148,20 +151,37 @@ header {
         width: 90%;
         margin: 0 auto;
     }
+    h1{
+        font-size: 3rem;
+    }
     h2{
 /*        vertical-align: middle;*/
         text-align: center;
-        text
+        font-size: 1.8rem;
     }
     nav li {
         width: 20%;
         float: left;
         text-align: center;
         list-style: none;
-        border: 1px solid black;
+        border: 2px solid #0C4E7F;
+        background-color: #199CFF;
     }
-    nav a:link{
+    nav a,
+    nav a:link,
+    nav a:visited {
+        display: block;
+        font: bold 1.618rem 'Philosopher', Helvetica, Arial, sans-serif;
+        text-align: center;
         text-decoration: none;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        animation-name: fade;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        color: white;
     }
     main {
         width: 90%;
@@ -212,6 +232,13 @@ header {
     header {
         height: 200px;
     }
+    h1{
+        padding-top: 2rem;
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
     nav {
         width: 90%;
         margin: 0 auto;
@@ -221,21 +248,41 @@ header {
         float: left;
         text-align: center;
         list-style: none;
-        border: 1px solid black;
+        border: 2px solid #0C4E7F;
+        background-color: #199CFF;
     }
-    nav a:link{
+    nav a,
+    nav a:link,
+    nav a:visited {
+        display: block;
+        font: bold 1.618rem 'Philosopher', Helvetica, Arial, sans-serif;
+        text-align: center;
         text-decoration: none;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        animation-name: fade;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        color: white;
     }
 
     main {
         width: 90%;
+        margin: 0 auto;
+
     }
     .col {
         width: 50%;
         float: left;
+        padding: 0 10px 50px 10px;
+
     }
     .col img {
         width: 50%;
+        padding-right: 10px;
+        display: inline-block;
     }
         footer {
         width: 100%;
@@ -243,7 +290,7 @@ header {
         bottom: 0;
         left: 0;
         min-height: 50px;
-        background-color: white;;
+        background-color: white;
     }
     footer p{
         text-align: center;
@@ -268,22 +315,51 @@ header {
     header {
         height: 300px;
     }
+    h1{
+        font-size: 6rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
     nav {
-         width: 30%;
+        width: 30%;
         float: left;
         margin: 0 auto;
-        padding: 50px;
         font-size: 2rem;
+        margin-top: 10px
     }
     nav li {
+        text-align: center;
         width: 100%;
         list-style: none;
-
+        border: 2px solid #0C4E7F;
+        background-color: #199CFF;
+        margin-bottom: 8px;
     }
-    nav a:link{
+    nav li:hover{
+        animation-name: fade;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        color: white;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font: bold 1.618rem 'Philosopher', Helvetica, Arial, sans-serif;
+        text-align: center;
         text-decoration: none;
     }
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        animation-name: fade;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        color: white;
+    }
+
     main {
+        margin-left: 10%;
         width: 70%;
         float: left;
         margin: 0 auto;
@@ -292,6 +368,7 @@ header {
     main .col {
         width: 50%;
         float: left;
+        padding: 0 10px 50px 10px;
 
     }
     .col img {
