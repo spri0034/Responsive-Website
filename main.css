@@ -24,6 +24,7 @@ body {
     background-color: teal;
 /*    background-color: #65BDFF;*/
     width: 100%;
+    position:absolute;
 }
 
 h1 {
@@ -54,6 +55,7 @@ kbd {
 
 .wrapper {
     background-color: #65BDFF;
+    position: absolute;
 }
 
 header {
