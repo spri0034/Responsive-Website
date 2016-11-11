@@ -15,9 +15,9 @@ Font Scaling
 Colour scheme
 
 **************************************************/
-@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
 
-*{
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Philosopher');
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -32,171 +32,228 @@ Colour scheme
     }
 }
 
-html{
+html {
     font-size: 16px;
     line-height: 1.6;
     font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
 }
 
-body{
+body {
     background-color: #62737F;
 }
-/***************************
-DEFAULTS - MOBILE FIRST
-***************************/
-h1{
-    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+
+h1 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    color: #0C4E7F;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    color: #0C4E7F;
+    text-align: center;
+}
+
+li,
+p,
+a {
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
     color: #0C4E7F;
 }
-h2{
-    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+
+pre,
+code,
+kbd {
+    font-family: 'Philosopher', Helvetica, Arial, sans-serif;
     color: #0C4E7F;
 }
-li, p, a{
-    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
-    color: #0C4E7F;
+
+.wrapper {
+    background-color: #65BDFF;
 }
-pre, code, kbd{
-    font: normal 1.0rem 'Droid Sans Mono', 'more font stack stuff',
-    color: #0C4E7F;
+
+.header {
+    background-color: #65BDFF;
+    width: 100%;
 }
+
+@media screen and (max-width: 599px) {
+    /***************************
 /***************************
     LAYOUT - MOBILE FIRST
 ***************************/
-.wrapper{
-    width: 95%;
-    margin: 0 auto;
-    background-color: #65BDFF;
-}
-header{
-    width: 100%;
-    background-color: #65BDFF;
-}
-
-
-nav{
-    text-align: center;
-    width: 100%;
-}
-nav>ul{
-    width: 100%;
-}
-nav li{
-    width: 100%;
-    list-style: none;
-    border: 2px solid #0C4E7F;
-    text-decoration: none;
-    background-color: #199CFF;
-}
-nav a,
-nav a:link,
-nav a:visited{
-    display: block;
-    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
-    text-align: center;
-}
-nav a:active,
-nav a:focus,
-nav a:hover{
-    animation-name: fade;
-    animation-duration: .7s;
-    animation-fill-mode: forwards;
-    color: white;
-}
-
-main{
-    width: 100%;
-}
-.col{
-    float: none;
-    width: 100%;
-}
-.col img{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    background-color: azure;
-}
-footer{
-    width: 100%;
-}
-
-@media screen and (min-width:600px) and (max-width: 799px){
-    .wrapper{
+    .wrapper {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 50px 0 50px;
+    }
+    header {}
+    nav {
+        text-align: center;
         width: 100%;
     }
-    header{
+    nav>ul {
         width: 100%;
     }
-    nav{
+    nav li {
+        width: 100%;
+        list-style: none;
+        border: 2px solid #0C4E7F;
+        background-color: #199CFF;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        display: block;
+        font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover {
+        animation-name: fade;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+        color: white;
+    }
+    main {
+        width: 100%;
+    }
+    .col {
+        float: none;
+        width: 100%;
+    }
+    .col img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        background-color: azure;
+    }
+    footer {
+        width: 100%;
+        background-color: #199CFF;
+        text-align: center
+    }
+    footer li {
+        width: 100%;
+        list-style: none;
+        text-decoration: none;
+        background-color: #199CFF;
+    }
+    footer a:link {
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 799px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px 0 50px;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
         width: 90%;
     }
-    nav li{
+    nav li {
         width: 20%;
+        float: left;
+        text-align: center;
+        list-style: none;
+        border: 1px solid black;
     }
-    main{
+    nav a:link{
+        text-decoration: none;
+    }
+    main {
         width: 90%;
     }
-    .col{
+    .col {
         width: 50%;
+        float: left;
+        padding: 10px;
     }
-    .col img{
+    .col img {
         width: 60%;
     }
-    footer{
+    footer {
         width: 90%;
+        display: block;
+    }
+    footer p{
+        width: 25%;
+        float: left;
+    }
+    footer li{
+        width: 25%;
+        list-style: none;
+
     }
 }
-@media screen and (min-width: 800px) and (max-width: 1199px){
-    .wrapper{
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .wrapper {
         width: 100%;
     }
-    header{
+    header {
         width: 100%;
     }
-    nav{
+    nav {
         width: 90%;
+        margin: 0 auto;
     }
-    nav li{
+    nav li {
         width: 20%;
+        float: left;
+        text-align: center;
+        list-style: none;
+        border: 1px solid black;
     }
-    main{
-        width: 90%;
-    }
-    .col{
-        width: 50%;
-    }
-    .col img{
-        width: 50%;
-    }
-    footer{
-        width: 100%;
+    nav a:link{
+        text-decoration: none;
     }
 
-}
-@media screen and (min-width: 1200px){
- .wrapper{
-        width: 100%;
+    main {
+        width: 90%;
     }
-    header{
-        width: 100%;
+    .col {
+        width: 50%;
+        float: left;
     }
-    nav{
-        width: 30%;
-    }
-    nav li{
-        width: 100%;
-    }
-    main{
-        width: 70%;
-    }
-    .col{
+    .col img {
         width: 50%;
     }
-    .col img{
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 30%;
+    }
+    nav li {
+        width: 100%;
+    }
+    main {
+        width: 70%;
+    }
+    .col {
+        width: 50%;
+    }
+    .col img {
         width: 55%;
     }
-    footer{
+    footer {
         width: 100%;
     }
 }
