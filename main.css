@@ -1,21 +1,3 @@
-/**************************************************
-Fonts
-Droid Serif
-Droid Sans
-Droid Sans Mono
-
-Font Scaling
-6.854rem
-4.236rem
-2.618rem
-1.618rem
-1.0rem
-0.618rem
-
-Colour scheme
-
-**************************************************/
-
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Philosopher');
 * {
     padding: 0;
@@ -39,7 +21,8 @@ html {
 }
 
 body {
-    background-color: #62737F;
+    background-color: purple;
+    width: 100%;
 }
 
 h1 {
@@ -75,9 +58,10 @@ kbd {
 header {
     background-color: #65BDFF;
     width: 100%;
-    background-image: url(http://lorempixel.com/1920/1080/food);
+/*    background-image: url(http://lorempixel.com/1920/1080/food);*/
 }
 
+/*small*/
 @media screen and (max-width: 599px) {
     .wrapper {
         width: 95%;
@@ -132,19 +116,21 @@ header {
     footer {
         width: 100%;
         background-color: #199CFF;
-        text-align: center
+        text-align: center;
     }
     footer li {
         width: 100%;
         list-style: none;
-        text-decoration: none;
         background-color: #199CFF;
+
     }
     footer a:link {
         text-decoration: none;
     }
 }
+/*end small*/
 
+/*medium*/
 @media screen and (min-width:600px) and (max-width: 799px) {
     .wrapper {
         width: 100%;
@@ -156,6 +142,12 @@ header {
     }
     nav {
         width: 90%;
+    }
+    h2{
+        min-height: 130px;
+        background-color: lightskyblue;
+        vertical-align: middle;
+        text-align: center;
     }
     nav li {
         width: 20%;
@@ -169,29 +161,38 @@ header {
     }
     main {
         width: 90%;
+        padding: 0 5% 0 5%;
     }
     .col {
         width: 50%;
         float: left;
         padding: 10px;
+        height: 100%;
     }
-    .col img {
+    .col p img {
         width: 60%;
+        display: inline;
+        padding: 0 10px 0 0;
     }
-    footer {
-        width: 90%;
+
+    .footer {
+
     }
-    footer p{
-        width: 25%;
-        float: left;
+    .footer p{
+
     }
-    footer li{
-        width: 25%;
+    .footer li{
+        width: 33.3333%;
         list-style: none;
 
     }
+    .footer a:link{
+        text-decoration: none;
+    }
 }
+/*end medium*/
 
+/*large*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
 /*
     .wrapper {
@@ -231,7 +232,9 @@ header {
         width: 100%;
     }
 }
+/*end large*/
 
+/*x-large*/
 @media screen and (min-width: 1200px) {
     .wrapper {
         width: 100%;
@@ -241,7 +244,7 @@ header {
         height: 300px;
     }
     nav {
-        width: 30%;
+         width: 30%;
         float: left;
         margin: 0 auto;
         padding: 50px;
@@ -274,3 +277,4 @@ header {
 
     }
 }
+/*x-large*/
