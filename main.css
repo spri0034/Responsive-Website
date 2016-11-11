@@ -55,7 +55,7 @@ kbd {
 
 .wrapper {
     background-color: #65BDFF;
-    position: absolute;
+
 }
 
 header {
@@ -138,20 +138,20 @@ header {
 @media screen and (min-width:600px) and (max-width: 799px) {
     .wrapper {
         width: 100%;
-        margin: 0 auto;
-        padding: 0 50px 0 50px;
+        position: absolute;
     }
+
     header {
         height: 100px;
     }
     nav {
         width: 90%;
+        margin: 0 auto;
     }
     h2{
-        min-height: 130px;
-        background-color: lightskyblue;
-        vertical-align: middle;
+/*        vertical-align: middle;*/
         text-align: center;
+        text
     }
     nav li {
         width: 20%;
@@ -165,12 +165,14 @@ header {
     }
     main {
         width: 90%;
+        margin: 0 auto;
 
     }
     .col {
         width: 50%;
         float: left;
         padding: 10px;
+        padding-bottom: 50px;
         height: 100%;
     }
     .col p img {
@@ -204,12 +206,9 @@ header {
 
 /*large*/
 @media screen and (min-width: 800px) and (max-width: 1199px) {
-/*
     .wrapper {
-        width: 100%;
-        overflow: hidden;
+        position:absolute;
     }
-*/
     header {
         height: 200px;
     }
@@ -238,8 +237,25 @@ header {
     .col img {
         width: 50%;
     }
-    footer {
+        footer {
         width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 50px;
+        background-color: white;;
+    }
+    footer p{
+        text-align: center;
+    }
+    footer li{
+        width: 33.33%;
+        list-style: none;
+        float: left;
+        text-align: center;
+    }
+    footer a:link{
+        text-decoration: none;
     }
 }
 /*end large*/
@@ -247,8 +263,7 @@ header {
 /*x-large*/
 @media screen and (min-width: 1200px) {
     .wrapper {
-        width: 100%;
-        overflow: hidden;
+        position:absolute;
     }
     header {
         height: 300px;
@@ -271,20 +286,36 @@ header {
     main {
         width: 70%;
         float: left;
+        margin: 0 auto;
+
     }
     main .col {
         width: 50%;
-        float: left
+        float: left;
+
     }
     .col img {
         width: 55%;
     }
-    footer {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        height:60px;   /* Height of the footer */
-
+        footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        min-height: 50px;
+        background-color: white;
+    }
+    footer p{
+        text-align: center;
+    }
+    footer li{
+        width: 33.33%;
+        list-style: none;
+        float: left;
+        text-align: center;
+    }
+    footer a:link{
+        text-decoration: none;
     }
 }
 /*x-large*/
